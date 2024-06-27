@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">POW3R</div>
+        <nav>
+            <ul>
+                <li><a href="#about">O MNIE</a></li>
+                <li><a href="#projects">PROJEKTY</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="about" class="content">
+        <div class="text">
+            <h2>O MNIE</h2>
+            <h1>Cześć, tu Bartek<br><span>Student III roku</span> Informatyki</h1>
+            <p>Jestem studentem II roku Informatyki na Politechnice Poznańskiej, <br>z zamiłowaniem do technologii i 
+                jej praktycznych zastosowań. Moje zainteresowania obejmują programowanie, 
+                inżynierię oprogramowania oraz nowe technologie, które zmieniają nasz świat. 
+                Jako osoba ambitna<br> i pełna pasji, stale poszukuję nowych wyzwań i możliwości do nauki. 
+                Wierzę, że ciągły rozwój i zdobywanie nowych doświadczeń są kluczem do sukcesu w dynamicznie 
+                zmieniającym się świecie technologii.</p>
+                <a href="https://github.com/bartosz-kozlowski" class="button" target="_blank">
+                    <img src="{{ url_for('static', filename='img/github-mark-white.png') }}" alt="GitHub Logo" class="icon">
+                    GitHub</a>
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Profile Image">
+        </div>
+    </div>
+    <div id="projects" class="projects">
+        <h2>PROJEKTY</h2>
+        <div class="Wulkan">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r5Ir-rJ5YWE?si=deur_F3E0xri13as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>Projekt wizualizacji trójwymiarowego, eksplodującego wulkanu na przedmiot Grafika Komputerowa i Wizualizacja. Wykorzystano OpenGL, GLM, Assimp oraz Blender.</p>
+    </div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>KONTAKT</h2>
+        <p>Możesz się ze mną skontaktować przez e-mail: <a href="mailto:barkoz.2003@gmail.com">barkoz.2003@gmail.com</a></p>
+    </div>
+</body>
+</html>
