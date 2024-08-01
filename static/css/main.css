@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background: #000;
@@ -68,6 +77,10 @@ nav a:hover {
     line-height: 1.2;
 }
 
+#about {
+    margin-bottom: 60px; /* Dodaje odstęp poniżej sekcji "O MNIE" */
+}
+
 .text span {
     color: #00aaff;
 }
@@ -110,7 +123,6 @@ nav a:hover {
 }
 
 .projects, .contact {
-    padding: 40px;
     max-width: 1200px;
     margin: auto;
     text-align: center;
@@ -119,7 +131,51 @@ nav a:hover {
 .projects h2, .contact h2 {
     color: #bbb;
     font-size: 30px;
+    padding: 20px;
+}
+
+.projects h3, .contact h3 {
+    color: #00aaff;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.projects h4 {
+    color: #00ff04be;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.projects p {
+    padding: 10px;
+}
+
+.contact p {
+    margin-top: 10px;
     margin-bottom: 20px;
+}
+
+#contact {
+    margin-top: 20px; /* Dodaje odstęp poniżej sekcji "O MNIE" */
+}
+
+.wulkan span {
+    color: #ff0000;
+}
+
+.code {
+    width: 500px; /* Możesz zmienić na dowolną szerokość */
+    height: auto; /* Zachowuje proporcje obrazka */
+}
+
+.game {
+    width: 600px; /* Możesz zmienić na dowolną szerokość */
+    height: auto; /* Zachowuje proporcje obrazka */
+}
+
+.app {
+    width: 600px; /* Możesz zmienić na dowolną szerokość */
+    height: auto; /* Zachowuje proporcje obrazka */
 }
 
 .video {
